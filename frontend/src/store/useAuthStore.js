@@ -38,7 +38,7 @@ export const useAuthStore = create((set, get) => ({
           get().connectSocket();
 
         } catch (error) {
-          toast.error(error.response.data.message);
+          toast.error("Account creation failed");
         } finally {
           set({ isSigningUp: false });
         }
@@ -54,7 +54,7 @@ export const useAuthStore = create((set, get) => ({
           get().connectSocket();
 
         } catch (error) {
-          toast.error("Error");
+          toast.error("Login attempt failed");
         } finally {
           set({ isLoggingIn: false });
         }
@@ -67,7 +67,7 @@ export const useAuthStore = create((set, get) => ({
           toast.success("Logged out successfully");
           get().disconnectSocket();
         } catch (error) {
-          toast.error("Error");
+          toast.error("Logout attempt failed");
         }
       },
 
@@ -79,7 +79,7 @@ export const useAuthStore = create((set, get) => ({
           toast.success("Profile updated successfully");
         } catch (error) {
           console.log("error in update profile:", error);
-          toast.error("Error updating profile");
+          toast.error("image too large, resize it to 1mb or less");
         } finally {
           set({ isUpdatingProfile: false });
         }
