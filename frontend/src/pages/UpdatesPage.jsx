@@ -23,6 +23,7 @@ const UpdatesPage = () => {
     <br /> - Fixed profile page accents
     <br /> - Fixed "image too large" error message
     <br /> - updated error toasts
+    <br /> - fixed home page text wrap issues
     </p>
     <p className="text-zinc-500">( 21/4/25 )</p>
 </div>

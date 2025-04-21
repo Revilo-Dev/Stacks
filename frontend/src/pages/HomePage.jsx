@@ -18,8 +18,8 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-          <p className="flex text-nowrap" > Beta version: please report bugs at:<a className="text-accent"   href="mailto:revilo2.dev@gmail.com"> revilo2.dev@gmail.com</a></p>  
-          <p className="flex text-nowrap" > Check out the :<a className="text-accent"   href="https://trello.com/b/clFa5aGI/stacks"> Roadmap</a></p>
+          <p> Beta version: please report bugs at:<a className="text-accent"   href="mailto:revilo2.dev@gmail.com"> revilo2.dev@gmail.com</a></p>  
+          <p> Check out the :<a className="text-accent"   href="https://trello.com/b/clFa5aGI/stacks"> Roadmap</a></p>
     </div>
   );
 };
